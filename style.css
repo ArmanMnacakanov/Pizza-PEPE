@@ -1,0 +1,1045 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 99999999;
+}
+
+.contact_box {
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_box img {
+    object-fit: cover;
+}
+
+.contact_box h1 {
+    color: white;
+}
+
+.contact_box span {
+    color: white;
+}
+
+nav {
+    width: auto;
+    height: auto;
+}
+
+nav ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+nav img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.cart_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart_search>button {
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    padding: 5px 15px;
+
+}
+
+.banner {
+    width: 100%;
+    aspect-ratio: 16/6;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h6-rev-img-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner img {
+    width: 800px;
+    object-fit: contain;
+}
+
+.banner div {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-size: 120px;
+    transform: rotate(-10deg);
+}
+
+.kids_menu_box {
+    width: 80%;
+    height: auto;
+    padding: 40px 0;
+    overflow: hidden;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.kids_menu_box>div:first-child {
+    width: 100%;
+    aspect-ratio: 16/4;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: blue; */
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h5-img-7.jpg);
+    background-position: center;
+    background-size: 100%;
+    transition: .4s;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.kids_menu_box>div:first-child:hover {
+    background-size: 110%;
+}
+
+.kids_menu_box>div:first-child::before {
+    content: '$7.99';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    right: 3%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
+
+.kids_menu_box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.kids_menu_box p {
+    color: white;
+    font-size: 20px;
+}
+
+.kids_menu_box>div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.kids_menu_box>div:last-child>img {
+    width: 250px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.kids_menu_box>div:last-child>div {
+    width: 600px;
+    aspect-ratio: 16/7.3;
+    /* background-color: blue; */
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h5-img-10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.kids_menu_box>div:last-child>div>h1 {
+    font-size: 40px;
+}
+
+.kids_menu_box>div:last-child>div>div {
+    display: flex;
+    gap: 15px;
+}
+
+.kids_menu_box>div:last-child>div>div>input {
+    font-size: 20px;
+    width: 250px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.kids_menu_box>div:last-child>div>div>button {
+    font-size: 20px;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(173, 14, 14);
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pizza_menu_box {
+    width: 100%;
+    height: auto;
+    /* background-color: blue; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pizza_menu_box_title_box {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pizza_menu_box_title_box h3 {
+    color: brown;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.pizza_menu_box_title_box h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.pizza_menu_box_title_box p {
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product_box {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.product {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product:first-child::before {
+    content: '-14%';
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(221, 149, 15);
+    color: antiquewhite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 17%;
+    top: 5%;
+}
+
+.product:nth-child(3)::before {
+    content: "SOLD";
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: brown;
+    color: antiquewhite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 17%;
+    top: 5%;
+}
+
+.product:last-child::before {
+    content: "NEW";
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(12, 59, 12);
+    color: antiquewhite;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 17%;
+    top: 5%;
+}
+
+.product h3 {
+    font-size: 15px;
+    color: rgb(112, 112, 10);
+}
+
+.product del span {
+    color: rgb(107, 99, 99);
+}
+
+.product span {
+    font-size: 15px;
+    color: rgb(233, 10, 10);
+}
+
+.banner_2 {
+    width: 100%;
+    aspect-ratio: 16/7;
+    display: flex;
+    padding: 50px 0;
+    justify-content: flex-start;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2020/01/Fast-foof-home-paralax-img.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: top;
+    gap: 15px;
+}
+
+.banner_2_info {
+    width: 600px;
+    height: auto;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.banner_2_info h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.banner_2_info p {
+    font-size: 20px;
+    color: white;
+}
+
+.SMART_PIZZA_SLICE_BOX {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 100px 30px;
+    overflow: hidden;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.SMART_PIZZA_SLICE_BOX>div:last-child {
+    width: 500px;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO span {
+    color: brown;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO h1 {
+    color: black;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO p {
+    color: rgb(78, 72, 72);
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO img {
+    width: 150px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.SMART_PIZZA_SLICE_BOX_INFO h4 {
+    color: rgb(56, 48, 4);
+}
+
+.washington_post_box {
+    width: 100%;
+    aspect-ratio: 16/5;
+    padding: 100px 0;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-testimonials-bckgrnd.jpg);
+    background-size: 150%;
+    background-position: center;
+    overflow: hidden;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.washington_post_box_info {
+    width: 700px;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.washington_post_box_info p {
+    color: rgb(15, 15, 15);
+    font-size: 25px;
+    text-align: center;
+}
+
+.washington_post_box_info span {
+    color: brown;
+}
+
+.rock_nigth_party_box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rock_nigth_party_box ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.rock_nigth_party_box li {
+    width: 150px;
+    height: 150px;
+}
+
+.rock_nigth_party_box a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock_nigth_party_box div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    justify-content: center;
+    opacity: 0;
+    transition: .4s ease;
+    align-items: center;
+
+}
+
+.rock_nigth_party_box a:hover div {
+    opacity: 1;
+}
+
+.rock_nigth_party_box li span {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+.rock_nigth_party_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    background-color: #232121;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.links {
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 40px 20px;
+
+    flex-direction: column;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/footer-img-2.jpg);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.links div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.links>div>div {
+    width: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.links ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    gap: 10px;
+}
+
+.links h3 {
+    color: rgb(100, 74, 7);
+}
+
+.links a {
+    color: gray;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.links a:hover {
+    color: rgb(100, 74, 7);
+}
+
+.links p {
+    color: white;
+    font-size: 25px;
+}
+
+.links span {
+    color: gray;
+}
+
+.social>ul {
+    flex-direction: row;
+    list-style: none;
+}
+
+.social>ul>li:first-child a {
+    color: rgb(100, 74, 7);
+}
+
+.links>div:last-child a {
+    color: rgb(10, 71, 71);
+}
+
+.links>div:last-child a span {
+    color: rgb(100, 74, 8);
+}
+
+.links>div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lite_img {
+    width: 50%;
+    height: auto;
+}
+
+.lite_img img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2.983;
+}
+
+#menu_btn {
+    display: none;
+    position: absolute;
+    right: 3%;
+    visibility: hidden;
+}
+
+label {
+    display: none;
+    position: absolute;
+    right: 3%;
+}
+
+@media(min-width:1024px) and (max-width:1200px) {
+    .kids_menu_box>div:last-child {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .kids_menu_box>div:last-child>img {
+        width: 400px;
+    }
+
+    .links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lite_img {
+        width: 100%;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    nav li:nth-child(4) {
+        display: none;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        width: 400px;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: brown;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        width: 40px;
+        aspect-ratio: 1;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    #menu_btn:checked~nav {
+        height: 250px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 100px;
+    }
+
+    .banner img {
+        width: 75%;
+    }
+
+    .kids_menu_box {
+        width: 100%;
+    }
+
+    .kids_menu_box>div:last-child {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kids_menu_box>div:last-child>img {
+        width: 370px;
+    }
+
+    .kids_menu_box>div:last-child>div {
+        width: 100%;
+
+    }
+
+    .SMART_PIZZA_SLICE_BOX {
+        flex-direction: column-reverse;
+    }
+
+    .rock_nigth_party_box ul {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    .lite_img {
+        width: 100%;
+    }
+}
+
+@media(min-width:552px) and (max-width:768px) {
+    header {
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    nav {
+        width: 400px;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: brown;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .contact_box h1 {
+        font-size: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        width: 40px;
+        aspect-ratio: 1;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    #menu_btn:checked~nav {
+        height: 250px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .banner img {
+        width: 75%;
+    }
+
+    .kids_menu_box {
+        width: 100%;
+    }
+
+    .kids_menu_box>div:last-child {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kids_menu_box>div:last-child>img {
+        width: 268px;
+    }
+
+    .kids_menu_box>div:last-child>div {
+        width: 100%;
+    }
+
+    .SMART_PIZZA_SLICE_BOX {
+        flex-direction: column-reverse;
+    }
+
+    .SMART_PIZZA_SLICE_BOX_INFO {
+        width: 100%;
+    }
+
+    .rock_nigth_party_box ul {
+        flex-wrap: wrap;
+    }
+
+    .rock_nigth_party_box li {
+        width: 180px;
+        height: 180px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .links {
+        width: 100%;
+    }
+    .links p{
+        font-size: 20px;
+    }
+
+    .lite_img {
+        width: 100%;
+    }
+
+}
+@media(max-width:552px){
+    header {
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    nav {
+        width: 400px;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: brown;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .contact_box h1 {
+        font-size: 15px;
+    }
+    .contact_box img{
+        width: 40px;
+    }
+    .cart_search>button{
+        font-size: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        width: 40px;
+        aspect-ratio: 1;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    #menu_btn:checked~nav {
+        height: 250px;
+    }
+    .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner img {
+        width: 75%;
+    }
+    .kids_menu_box {
+        width: 100%;
+    }
+
+    .kids_menu_box>div:last-child {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kids_menu_box>div:last-child>img {
+        width: 100%;
+    }
+
+    .kids_menu_box>div:last-child>div {
+        width: 100%;
+    }
+    .kids_menu_box>div:last-child>div>div>button{
+        width: 160px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .kids_menu_box>div:last-child>div>div>input{
+        width: 160px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .banner_2{
+        padding: 10PX 0;
+    }
+    .SMART_PIZZA_SLICE_BOX_INFO{
+        width: 100%;
+    }
+    .SMART_PIZZA_SLICE_BOX{
+        flex-direction: column-reverse;
+    }
+    .SMART_PIZZA_SLICE_BOX_INFO div{
+        flex-wrap: wrap;
+    }
+    .pizza_menu_box_title_box h1{
+        font-size: 30px;
+    }
+    .SMART_PIZZA_SLICE_BOX_INFO div>div{
+        width: 120px;
+    }
+    .SMART_PIZZA_SLICE_BOX_INFO img {
+        width: 100%;
+        height: 90px;
+    }
+    .rock_nigth_party_box ul {
+        flex-wrap: wrap;
+    }
+
+    .rock_nigth_party_box li {
+        width: 180px;
+        height: 180px;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    .links {
+        width: 100%;
+    }
+    .links>div{
+        flex-wrap: wrap;
+    }
+    .links>div>div{
+        width: 100%;
+    }
+    .links p{
+        font-size: 20px;
+    }
+
+    .lite_img {
+        width: 100%;
+    }
+
+}
